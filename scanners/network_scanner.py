@@ -1,21 +1,23 @@
 import os
+from datetime import datetime
 
-# Створюємо список IP-адрес (це твої "таргети")
 servers = ["8.8.8.8", "1.1.1.1", "127.0.0.1"]
 
-print(f"--- Starting scan of {len(servers)} servers ---")
+# Створюємо файл для запису звіту ('w' - write mode)
+with open("scan_report.txt", "w") as file:
+    file.write(f"Network Scan Report - {datetime.now()}\n")
+    file.write("-" * 30 + "\n")
 
-# Цикл for перебирає кожну адресу в списку
-for ip in servers:
-    print(f"Checking {ip}...")
-    
-    # Виконуємо команду ping. 
-    # -c 1 (один пакет), > /dev/null (приховати технічний вивід)
-    exit_code = os.system(f"ping -c 1 {ip} > /dev/null")
-    
-    if exit_code == 0:
-        print(f"  [+] Server {ip} is ACTIVE")
-    else:
-        print(f"  [-] Server {ip} is DOWN")
+    for ip in servers:
+        print(f"Checking {ip}...")
+        exit_code = os.system(f"ping -c 1 {ip} > /dev/null")
+        
+        if exit_code == 0:
+            status = "UP"
+        else:
+            status = "DOWN"
+        
+        # Записуємо результат у файл
+        file.write(f"Server {ip} is {status}\n")
 
-print("--- Scan finished ---")
+print("\n[DONE] Results saved to scan_report.txt")
