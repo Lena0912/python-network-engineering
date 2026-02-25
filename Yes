@@ -1,0 +1,29 @@
+Python for Network Engineering
+
+This repository documents my journey in mastering Python for networking, automation, and security. It includes scripts, labs, and documentation of my learning process.
+
+🚀 Learning Goals
+
+Automating network tasks using socket, scapy, and paramiko.
+
+Understanding network protocols through code.
+
+Building tools for network diagnostics and monitoring.
+
+🛠 Project Structure
+
+1. Network Diagnostics
+
+Port Scanner: A TCP port scanner to identify open services on a target host.
+
+Status: Completed
+
+Key concepts: TCP Handshake, Python socket library, Exception handling.
+
+💻 Environment
+
+OS: Windows 10
+
+Python: 3.x
+
+Tools: VS Code, Git Bash

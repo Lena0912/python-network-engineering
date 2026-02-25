@@ -1,0 +1,4 @@
+ERROR: Database connection failed
+ERROR: Disk space low
+ERROR: Failed to update certificates
+ERROR: Memory leak detected at 0x0045

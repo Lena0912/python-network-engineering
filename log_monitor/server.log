@@ -1,0 +1,7 @@
+INFO: System started
+ERROR: Database connection failed
+INFO: User logged in
+ERROR: Disk space low
+INFO: Backup completed
+ERROR: Failed to update certificates
+ERROR: Memory leak detected at 0x0045
