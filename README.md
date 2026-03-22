@@ -46,3 +46,9 @@ A second script (`system_check.sh`) focused on deep diagnostic and storage optim
 * **Storage Analysis:** Advanced use of `du`, `sort -hr`, and `head`.
 * **Process Management:** Monitoring system load via `htop` and `ps`.
 * **WSL Interoperability:** Handling file system differences between Linux and Windows.
+
+## 📊 SQL Skills & Data Analysis
+I use SQL to investigate system incidents and generate operational reports.
+* **Complex Joins:** Connecting user data with incident logs.
+* **Filtering & Aggregation:** Analyzing service uptime and priority distributions.
+* **Practice:** Check my [SQL Practice Folder](./sql-practice/) for code examples.
