@@ -52,3 +52,22 @@ I use SQL to investigate system incidents and generate operational reports.
 * **Complex Joins:** Connecting user data with incident logs.
 * **Filtering & Aggregation:** Analyzing service uptime and priority distributions.
 * **Practice:** Check my [SQL Practice Folder](./sql-practice/) for code examples.
+
+# 🛡️ Cybersecurity & Network Monitoring Lab
+
+This repository contains my practical scripts for system auditing and network security. 
+
+## 🛠️ Included Tools:
+1. **`security_audit.sh` (Bash)**: 
+   - Monitors active users.
+   - Lists listening network ports.
+   - Checks for failed SSH login attempts.
+2. **`port_scanner.py` (Python)**: 
+   - Investigates open ports on the network.
+3. **`log_monitor`**: 
+   - Automates system log investigations.
+
+## 🛡️ Security Best Practices Applied:
+- Restricted SSH access (Port 22) to **My IP** only via **AWS Security Groups**.
+- Monitoring of failed logins to prevent **Brute Force** attacks.
+- Regular system audits using automated Bash scripts.
